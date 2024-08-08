@@ -1,0 +1,260 @@
+body {
+    counter-reset: services;
+    font-family: "Rubik", sans-serif;
+    position: relative;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    direction: rtl;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #84BF60;
+    --links-color: #848787;
+    --bg-color: #FFF6E9;
+    --heading-color: #55932f;
+
+}
+
+.log {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.main-heading{
+    text-align: center;
+}
+
+.log .log-container {
+    padding: 50px 100px 50px 0;
+    flex: 1;
+}
+
+.log .log-img {
+    background-color: #84BF60;
+    width: 500px;
+    height: 100%;
+    position: relative;
+}
+
+.log .log-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.log .info {
+    direction: rtl;
+}
+
+
+.log .in-heading {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.log .info .i-in {
+    position: relative;
+}
+
+.log .info .i-in i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.log .info input[type="email"],
+.log .info input[type="password"] {
+
+    height: 50px;
+    border-radius: 40px;
+    width: 400px;
+    border: 1px solid var(--links-color);
+    font-size: 16px;
+    outline: none;
+    padding-right: 50px;
+    position: relative;
+    background-color: transparent;
+}
+
+.log .inp {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.remember .rad {
+    display: flex;
+    align-items: center;
+}
+
+.remember .rad label {
+    padding: 0 7px;
+}
+
+.remember a {
+    color: var(--main-color);
+}
+
+.log .info input[type="radio"] {
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 20px 6px #84bf60a5; */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    accent-color: #84bf60a5;
+    border: none;
+    /* opacity: 0; */
+    outline: #55932f;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.info .active button {
+    border-radius: 40px;
+    border: none;
+    background-color: var(--main-color);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 400px;
+}
+
+.info .move {}
+
+.info .move p {
+    margin:0;
+}
+
+.info .move a {
+    color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .log{
+        flex-direction: column;
+    }
+    .log .log-img img {
+        max-width: 120px;
+    }
+    
+    
+    .log .log-container {
+        padding: 20px;
+    }
+    
+    .log .log-img {
+        background-color: #84BF60;
+        width: 100%;
+        position: relative;
+    }
+    .log .info input[type="email"],
+    .log .info input[type="password"],
+    .info .active button
+    {
+        width: 220px;
+    }
+    .remember{
+        gap: 20px;
+    }
+    .info{
+        text-align: center;
+    }
+    }
+    @media (max-width: 420px) {
+        .log .log-img img {
+            max-width: 200px;
+        }
+    }
+
+
+
+.athor {
+        margin: 20px 0px;
+    
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+.athor::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        top: 50%;
+        left: 0;
+        z-index: -1;
+    
+    }
+    
+.athor h6 {
+        width: fit-content;
+        padding: 0 5px;
+        background-color: white;
+    }
+    
+.s-icon {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    
+.s-icon i {
+        font-size: 25px;
+        color: var(--heading-color);
+    }
+    i.gg{
+        color: rgb(255, 208, 0);
+    }
+    
+    i.ll{
+        color: rgb(1, 164, 209);
+    }
+    
+    i.ff{
+        color: #0058eb;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
